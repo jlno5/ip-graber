@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Roll | Admin</title>
+
+    <style>
+        body { background: #2c313c; color:#0dbc79; font-style: Verdana, sans-serif; }
+        ul { font-size: 15px; list-style-type: square; }
+    </style>
+</head>
+<body>
+    <h1>Heres a list of all IPs that opened the website</h1>
+    <ul>
+        <% for (var i = 0; i < ips.length; i++)  { %>
+            <li><%= ips[i].ip %> at <%= ips[i].time %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
