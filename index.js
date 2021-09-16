@@ -38,4 +38,4 @@ app.get('/admin', (req, res) => {
 
 })
 
-app.listen(8008, () => console.log('Listening on http://localhost:8008/'));
+app.listen(process.env.PORT || 8008, () => console.log('Listening on http://localhost:8008/'));
