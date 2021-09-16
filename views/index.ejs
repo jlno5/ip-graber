@@ -15,7 +15,7 @@
     <h1>Heres a list of all IPs that opened the website</h1>
     <ul>
         <% for (var i = 0; i < ips.length; i++)  { %>
-            <li><%= ips[i].ip %> at <%= ips[i].time %></li>
+            <li><a href=<%= "https://utrace.me/?query=" + ips[i].ip %>><%= ips[i].ip %> at <%= ips[i].time %></a></li>
         <% } %>
     </ul>
 </body>
