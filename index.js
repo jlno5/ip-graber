@@ -23,7 +23,7 @@ app.get('/admin', (req, res) => {
     if (req.query.password == "test1234" && req.query.username == "admin") {
         const ipListData = fs.readFileSync("./iplist.json", 'utf-8');
         const ipList = JSON.parse(ipListData);
-        const newIpList = {ips:[]}
+        const newIpList = {ips:[]};
 
         // ipList.ips = ipList.ips.sort((a, b) => { return a.time - b.time }) IDF why it doesn't work
         ipList.ips.forEach(element => {
