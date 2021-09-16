@@ -25,7 +25,7 @@ app.get('/admin', (req, res) => {
         const ipList = JSON.parse(ipListData);
         const newIpList = {ips:[]};
 
-        // ipList.ips = ipList.ips.sort((a, b) => { return a.time - b.time }) IDF why it doesn't work
+        // ipList.ips = ipList.ips.sort((a, b) => { return a.time - b.time }) IDF why it doesn't work 
         ipList.ips.forEach(element => {
             element.time = moment(element.time * 1000).format("YYYY.MM.DD - HH:mm:ss");
             newIpList.ips.push({ ip: element.ip, time: element.time });
